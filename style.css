@@ -38,7 +38,49 @@ main img {
 
 .group {
   display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.search {
+  display: flex;
   flex-direction: column;
+  align-items: center;
+  margin:auto;
+}
+
+#about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.aboutImages img{
+  padding: 0 0 20px 0;
+  width: 100%;
+}
+
+.imageForest{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.imageForest h3{
+  padding-top: 30px;
+  margin-right: 200px
+}
+.imageForest img{
+  width: 100%;
+}
+
+.alternate-background img{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  margin: auto;
+  width: 300px;
 }
 
 .item {
@@ -64,6 +106,7 @@ header {
   color: #fff;
 }
 
+
 header nav ul li {
   list-style-type: none;
 }
@@ -79,6 +122,10 @@ header nav ul li a:hover {
   text-decoration: none;
 }
 
+.navGroup {
+display:inline-block;
+justify-content: center;
+}
 /* -------  Search Form ------- */
 form {
   border: 2px solid #ff385c;
@@ -92,7 +139,6 @@ form label {
 form select,
 form input {
   margin-bottom: 20px;
-  width: 180px;
 }
 
 form button {
@@ -117,3 +163,77 @@ footer p {
 }
 
 /* -------  Media Query ------- */
+@media all and (min-width: 480px){
+ header{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+ }
+ .search {
+  display: flex;
+  flex-direction: row;
+  margin: 0 15 0 15;
+  justify-content: space-around;
+}
+
+.navGroup {
+display: flex;
+flex-direction: column;
+width: 15%;
+margin: 20px;
+  }
+
+  form button {
+  background-color: #ff385c;
+  border: none;
+    color: #fff;
+    font-size: 24px;
+    padding: 15px;
+    width: 15%;
+  }
+#about {
+  display:flex;
+  flex-direction: row;
+}
+.aboutImages{
+  display: flex;
+  flex-direction: row;
+}
+
+.aboutImages img{
+  margin: 15px;
+}
+
+.imageForest{
+  align-content:center;
+  flex-direction: row;
+}
+.items {
+  width: 50%;
+  margin: 15px;
+}
+
+.group {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+}
+
+#host{
+  display:flex;
+  flex-direction: row;
+}
+
+.wtbath {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+}
+.wtbath img{
+  width: 100%;
+}
+
+
+ 
+}
