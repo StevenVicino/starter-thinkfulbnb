@@ -2,23 +2,26 @@
 
 body {
   font-family: "Lato", sans-serif;
+  align-self: center;
+flex: 0 0 auto;
 }
 
 h2 {
-  font-size: 26px;
+  font-size: 2vw;
   font-weight: 400;
   margin: 0 10px 10px 10px;
   text-align: center;
 }
 
 h3 {
-  font-size: 18px;
+  font-size: 1.5vw;
   font-weight: 500;
 }
 
 p {
   line-height: 1.5em;
   margin: 0;
+  font-size: 1.5vw;
 }
 
 section {
@@ -43,10 +46,11 @@ main img {
 }
 
 .search {
-  display: flex;
+  display: inline-block;
   flex-direction: column;
   align-items: center;
-  margin:auto;
+  width: 100%;
+
 }
 
 #about {
@@ -80,7 +84,7 @@ main img {
   flex-direction: column;
   align-content: center;
   margin: auto;
-  width: 300px;
+  width: 40%;
 }
 
 .item {
@@ -101,8 +105,10 @@ header {
 }
 
 .logo {
+  display:flex;
+  justify-content: center;
   font-family: "Pangolin", cursive;
-  font-size: 72px;
+  font-size: 12vw;
   color: #fff;
 }
 
@@ -123,8 +129,8 @@ header nav ul li a:hover {
 }
 
 .navGroup {
-display:inline-block;
-justify-content: center;
+display:flex;
+justify-content: space-between;
 }
 /* -------  Search Form ------- */
 form {
@@ -133,19 +139,23 @@ form {
 }
 
 form label {
+  display:flex;
   font-weight: bold;
+  width: 30%;
 }
 
 form select,
 form input {
+  display: flex;
   margin-bottom: 20px;
+  width: 50%;
 }
 
 form button {
   background-color: #ff385c;
   border: none;
   color: #fff;
-  font-size: 24px;
+  font-size: 3vw;
   padding: 15px;
   width: 100%;
 }
@@ -173,21 +183,24 @@ footer p {
   display: flex;
   flex-direction: row;
   margin: 0 15 0 15;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 .navGroup {
 display: flex;
-flex-direction: column;
-width: 15%;
+flex-direction: row;
+width: 20%;
 margin: 20px;
   }
-
+form{
+  display:flex;
+  object-fit: contain;
+}
   form button {
   background-color: #ff385c;
   border: none;
     color: #fff;
-    font-size: 24px;
+    font-size: 1vw;
     padding: 15px;
     width: 15%;
   }
@@ -198,7 +211,9 @@ margin: 20px;
 .aboutImages{
   display: flex;
   flex-direction: row;
+  justify-content: space-evenly;
 }
+
 
 .aboutImages img{
   margin: 15px;
