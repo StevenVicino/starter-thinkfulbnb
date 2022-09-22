@@ -107,20 +107,36 @@ header {
 .logo {
   display:flex;
   justify-content: center;
+  align-self: center;
   font-family: "Pangolin", cursive;
   font-size: 12vw;
   color: #fff;
 }
 
+#menu{
+  display:flex;
+  align-content: center;
+}
 
 header nav ul li {
+  display:flex;
   list-style-type: none;
+  margin:auto;
+  flex: 1;
+  padding-right: 15px;
+  width: 100%;
+  justify-content: space-evenly;
+  object-fit: contain;
 }
 
 header nav ul li a {
+  display:flex;
   color: #fff;
   text-decoration: none;
-  padding: 0 20px 0 0;
+  font-size: 2vw;
+  margin: auto;
+  justify-content: space-evenly;
+  
 }
 
 header nav ul li a:hover {
@@ -128,27 +144,37 @@ header nav ul li a:hover {
   text-decoration: none;
 }
 
+header nav{
+display: flex;
+justify-content: center;
+}
+
 .navGroup {
 display:flex;
-justify-content: space-between;
+justify-content: space-around;
 }
 /* -------  Search Form ------- */
 form {
+  display:flex;
   border: 2px solid #ff385c;
   padding: 10px;
+  justify-content: space-evenly;
 }
 
 form label {
   display:flex;
   font-weight: bold;
   width: 30%;
+  font-size: 1.5vw;
+  margin:auto;
 }
 
 form select,
 form input {
   display: flex;
-  margin-bottom: 20px;
+  margin: auto;
   width: 50%;
+  font-size:1.5vw;
 }
 
 form button {
@@ -178,19 +204,30 @@ footer p {
   display:flex;
   flex-direction: row;
   justify-content: space-between;
+  flex: 0 0 1;
+
  }
  .search {
   display: flex;
   flex-direction: row;
-  margin: 0 15 0 15;
   justify-content: center;
+  flex: 0 0 1;
+ 
+}
+
+nav {
+  display: flex;
+  flex: 0 0 1;
 }
 
 .navGroup {
 display: flex;
 flex-direction: row;
+align-content: center;
+justify-content: center;
 width: 20%;
-margin: 20px;
+margin: auto;
+flex: 0 0 1;
   }
 form{
   display:flex;
@@ -200,8 +237,7 @@ form{
   background-color: #ff385c;
   border: none;
     color: #fff;
-    font-size: 1vw;
-    padding: 15px;
+    font-size: 2vw;
     width: 15%;
   }
 #about {
@@ -216,7 +252,17 @@ form{
 
 
 .aboutImages img{
+  display:flex;
   margin: 15px;
+  width: 30%;
+  align-content: center;
+}
+
+.aboutImages p{
+  display:flex;
+  margin: 15px;
+  width: 30%;
+  align-content: center;
 }
 
 .imageForest{
