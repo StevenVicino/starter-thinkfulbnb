@@ -13,4 +13,10 @@ For this assignment, you will implement Thinkfulbnb's landing page in HTML & CSS
 
 ## Images
 
+Desktop View
 
+![image](https://github.com/StevenVicino/starter-thinkfulbnb/blob/main/images/Desktop-view.png)
+
+Mobile View
+
+![image](https://github.com/StevenVicino/starter-thinkfulbnb/blob/main/images/Mobile-view.png)
